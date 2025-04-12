@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Castorail Generator JSON</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Castorail Generator JSON Data</h1>
+
+    <form id="generate-form">
+        <label for="date">Tanggal Drip Marketing:</label>
+        <input type="datetime-local" id="date" required>
+
+        <label for="version">Versi Drip Marketing:</label>
+        <input type="text" id="version" required placeholder="Contoh: 3.0">
+
+        <button type="submit">Generate JSON</button>
+    </form>
+
+    <div id="result" style="margin-top: 20px;">
+        <h3>Output JSON:</h3>
+        <pre id="json-output"></pre>
+        <div style="text-align: center; margin-top: 10px;">
+            <button id="download-btn" style="display: none;">Download JSON</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
