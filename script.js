@@ -76,7 +76,7 @@ document.getElementById('download-btn').addEventListener('click', function () {
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = 'generated_data.json';
+    a.download = 'castorail-json-data.json';
     a.click();
     URL.revokeObjectURL(url);
 });
